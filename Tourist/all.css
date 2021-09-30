@@ -1,0 +1,350 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+* {
+  margin        : 0;
+  padding       : 0;
+  border        : 0;
+  font-size     : 100%;
+  font          : inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing : 0;
+}
+
+/* #0070e0 #66453b*/
+.bg-first {
+  background: #0b9bee;
+}
+
+.bg-second {
+  background: #a79d88;
+}
+
+.bg-third {
+  background: #ae9085;
+}
+
+.bg-forth {
+  background: #506214;
+}
+
+html,
+body {
+  /* 設定body高度為100% 拉到視窗可視的大小 */
+  height: 100%;
+}
+
+.wrap {
+  max-width : 1024px;
+  min-height: 100%;
+  position  : relative;
+  margin    : 0 auto;
+}
+
+.header {
+  background     : url(https://media.nownews.com/nn_media/thumbnail/2021/07/1626253047729-514743c58c7d4e3ab8df374a4ab1a318-800x600.jpg?unShow=false) no-repeat center center;
+  background-size: cover;
+  height         : 380px;
+  padding-top    : 89px;
+  text-align     : center;
+}
+
+.header_title {
+  font-size     : 40px;
+  letter-spacing: 3.89px;
+  margin-bottom : 96px;
+}
+
+.header_select-district {
+  font-size    : 18px;
+  background   : rgba(255, 255, 255, 0.7);
+  border       : 3px solid #ffffff;
+  border-radius: 3px;
+  outline      : none;
+  font-weight  : bold;
+  width        : 452px;
+  height       : 48px;
+  text-indent  : 9.5px;
+  cursor       : pointer;
+}
+
+.content {
+  padding         : 121px 40px 90px 40px;
+  min-height      : -webkit-calc(100vh - 380px - 103px);
+  min-height      : calc(100vh - 380px - 103px);
+  background-color: #f0f0f0;
+  position        : relative;
+}
+
+/*熱門行政區*/
+.popular-section {
+  background    : #ffffff;
+  box-shadow    : 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius : 5px;
+  padding-top   : 20px;
+  padding-bottom: 18px;
+  padding-left  : 26px;
+  width         : 78%;
+  position      : absolute;
+  top           : -28px;
+  left          : 10.9%;
+  right         : 10.9%;
+}
+
+.popular-section_title {
+  font-size    : 18px;
+  margin-bottom: 14px;
+}
+
+.popular-section_list {
+  display    : flex;
+  margin-left: 25px;
+}
+
+.popular-section_item {
+  width        : 17.5%;
+  border-radius: 5px;
+  margin-right : 23px;
+}
+
+.popular-section_btn {
+  display        : block;
+  padding-top    : 11px;
+  padding-bottom : 11px;
+  text-decoration: none;
+  width          : 100%;
+}
+
+.popular-section_btn:hover {
+  text-decoration: none;
+}
+
+.popular-section_item:hover:nth-of-type(1) {
+  background: #42afee;
+}
+
+.popular-section_item:hover:nth-of-type(2) {
+  background: #c0bcb2;
+}
+
+.popular-section_item:hover:nth-of-type(3) {
+  background: #c7aea5;
+}
+
+.popular-section_item:hover:nth-of-type(4) {
+  background: #708a1d;
+}
+
+/*分隔線*/
+.divider {
+  width        : 24px;
+  height       : 24px;
+  border       : 1px solid #559ac8;
+  border-radius: 50%;
+  text-align   : center;
+  margin       : 0 auto 65px;
+  position     : relative;
+}
+
+.divider:before {
+  content : " ";
+  position: absolute;
+  bottom  : 12px;
+  left    : 26px;
+  border  : 1px dashed #559ac8;
+  width   : 437px;
+}
+
+.divider:after {
+  content : " ";
+  position: absolute;
+  bottom  : 12px;
+  right   : 26px;
+  border  : 1px dashed #559ac8;
+  width   : 437px;
+}
+
+.divider-img {
+  filter: invert(60%) sepia(50%) saturate(436%) hue-rotate(161deg) brightness(86%) contrast(93%);
+}
+
+/* 旅遊資訊呈現區塊 */
+.spot-section_title {
+  text-align   : center;
+  font-size    : 36px;
+  color        : #8a82cc;
+  margin-bottom: 24px;
+}
+
+.sopt-section_content {
+  position: relative;
+}
+
+.spot-section_list {
+  display        : flex;
+  justify-content: space-between;
+  flex-wrap      : wrap;
+}
+
+.spot-section_item {
+  box-shadow      : 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom   : 36px;
+  width           : 49%;
+  background-color: #fff;
+}
+
+.spot-section_header {
+  height  : 155px;
+  position: relative;
+}
+
+.spot-section_header img {
+  width     : 100%;
+  height    : 100%;
+  object-fit: cover;
+}
+
+.spot-section_headerInfo {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : flex-end;
+  position       : absolute;
+  bottom         : 14px;
+  left           : 24px;
+  right          : 24px;
+}
+
+.spot-section_subtitle {
+  max-width       : 89%;
+  font-size       : 24px;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding         : 4px 2px 0 2px;
+}
+
+.spot-section_district {
+  background-color: rgba(0, 0, 0, 0.2);
+  padding         : 3px 2px 2px 2px;
+}
+
+.spot-section_body {
+  padding        : 15px 24px 20px 24px;
+  display        : flex;
+  justify-content: space-between;
+  position       : relative;
+}
+
+.spot-section_schedule,
+.spot-section_address {
+  margin-bottom: 12px;
+}
+
+.spot-section_schedule-icon {
+  margin-right: 9px;
+}
+
+.spot-section_address-icon {
+  margin-left : 1px;
+  margin-right: 10px;
+}
+
+.spot-section_contact-icon {
+  margin-left : 4px;
+  margin-right: 12px;
+}
+
+.spot-section_free {
+  position: absolute;
+  right   : 24px;
+  bottom  : 20px;
+}
+
+.spot-section_free-icon {
+  margin-right: 8px;
+}
+
+.pageNumbers {
+  display        : flex;
+  justify-content: center;
+  font-size      : 16px;
+  font-weight    : 600;
+}
+
+.pageNumbers a {
+  padding        : 16px;
+  text-decoration: none;
+  color          : #4a4a4a;
+}
+
+.pageNumbers a:hover,
+.pageNumbers a.active {
+  color          : #559ac8;
+  text-decoration: none;
+}
+
+.scrollTop {
+  position: absolute;
+  right   : 28px;
+  bottom  : 124px;
+}
+
+.footer {
+  background    : #559ac8;
+  font-size     : 14px;
+  padding-top   : 24px;
+  padding-bottom: 23px;
+  position      : relative;
+  bottom        : 0;
+  width         : 100%;
+}
+
+.source {
+  color        : #ffd366;
+  margin-bottom: 0;
+}
+
+.disabled {
+  pointer-events: none;
+  cursor        : default;
+}

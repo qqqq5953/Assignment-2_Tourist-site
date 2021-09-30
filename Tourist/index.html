@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>高雄旅遊資訊</title>
+  <link rel="stylesheet" href="/all.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <h1 class="header_title text-white">高雄旅遊資訊</h1>
+      <select name="" id="district" class="header_select-district">
+      </select>
+    </header>
+
+    <main class="content">
+      <!--熱門行政區-->
+      <section class="popular-section">
+        <h4 class="popular-section_title">熱門行政區</h4>
+        <ul class="popular-section_list mb-0">
+          <li class="popular-section_item bg-first"><a href="#"
+              class="popular-section_btn text-center text-white">苓雅區</a>
+          </li>
+          <li class="popular-section_item bg-second"><a href="#"
+              class="popular-section_btn text-center text-white">三民區</a></li>
+          <li class="popular-section_item bg-third"><a href="#"
+              class="popular-section_btn text-center text-white">大樹區</a>
+          </li>
+          <li class="popular-section_item bg-forth"><a href="#"
+              class="popular-section_btn text-center text-white">小港區</a>
+          </li>
+        </ul>
+      </section>
+
+      <!--分隔線-->
+      <div class="divider">
+        <img class="divider-img" src="https://hexschool.github.io/JavaScript_HomeWork/assets/icons_down.png" alt="">
+      </div>
+
+      <!--旅遊資訊呈現區塊-->
+      <section class="spot-section">
+        <div class="sopt-section_content">
+          <!--pagination-->
+          <ul class="pageNumbers w-100" id="pagination"></ul>
+          <h2 class="spot-section_title"></h2>
+          <ul class="spot-section_list mb-0">
+          </ul>
+        </div>
+      </section>
+
+      <!--scrollTop-->
+      <div class="scrollTop">
+        <a href="#"><img src="https://hexschool.github.io/JavaScript_HomeWork/assets/btn_goTop.png" alt=""></a>
+      </div>
+    </main>
+
+    <footer class="footer text-center">
+      <p class="text-white">高雄旅遊網</p>
+      <p class="source">資料來源 高雄市政府</p>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/all.js"></script>
+</body>
+
+</html>
